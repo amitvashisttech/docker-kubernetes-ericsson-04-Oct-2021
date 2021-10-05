@@ -13,7 +13,7 @@
    44  kubectl api-versions
    45  kubectl api-resources
    46  ls
-   47  kubectl proxy --address='172.31.0.10' --port=8080 --accept-hosts='.' --accept-paths='.' &
+   47  kubectl proxy --address='172.31.0.100' --port=8080 --accept-hosts='.' --accept-paths='.' &
    48  curl http://localhost
    49  curl http://localhost:8080
    50  curl http://localhost:8080/api
