@@ -12,7 +12,7 @@ kubectl run hello-k8s --image=nginx --port=80
 
 ## Check the status of PODs 
 ```  
-kubectl get pods 
+kubectl get pods -o wide
 kubectl describe pods hello-k8s
 ```
 
@@ -25,4 +25,8 @@ kubectl get pods
 NAME             READY   STATUS    RESTARTS   AGE
 hello-k8s        1/1     Running   0          6m22s
 mypythonwebapp   1/1     Running   0          4m58s
+```
+## Let's Remove the pods 
+```
+kubectl delete pod <podname>
 ```
