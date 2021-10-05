@@ -31,15 +31,4 @@
    62  kubectl config get-clusters
    63  kubectl config get-clusters kubernetes
    64  kubectl config view
-   65  ls
-   66  cat .kube/config 
-   67  history 
-   68  ls
-   69  cd K8s-docker-ericsson-2020-Dec-07/
-   70  ls
-   71  cd 02-Kubernetes/
-   72  ls
-   73  mkdir 03-Kube-Api
-   74  cd 03-Kube-Api/
-   75  history > README.md
-```
+ 
