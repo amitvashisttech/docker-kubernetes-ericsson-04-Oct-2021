@@ -1,30 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworld-2-deployment
+  name: helloworld-deployment
   labels:
-    app: helloworld-2
+    app: helloworld
 spec:
-  replicas: 10
-  strategy:
-    rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 0
-    type: RollingUpdate
+  replicas: 3
   selector:
     matchLabels:
-      app: helloworld-2
+      app: helloworld
   template:
     metadata:
       labels:
-        app: helloworld-2
+        app: helloworld
     spec:
       imagePullSecrets:
       - name: regcred
       containers:
       - name: k8s-demo
-        image: amitvashist7/k8s-tiny-web:2
+        image: amitvashist7/k8s-tiny-web
         imagePullPolicy: IfNotPresent
         ports:
-        - name: node-port
+        - name: myappport
           containerPort: 80
