@@ -17,4 +17,13 @@
    82  kubectl get svc
    83  kubectl get pod
    84  kubectl exec -it wordpress-deployment-7d4896594c-kcqzf -c mysql -- mysql -u root -p
-   
+  
+# Database Commands: 
+```
+> show databases; 
+> use wordpress; 
+> show tables; 
+> select * from tablename; 
+> exit
+
+``` 
