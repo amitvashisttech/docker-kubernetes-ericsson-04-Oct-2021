@@ -5,8 +5,11 @@ metadata:
   labels:
     app: database
 spec:
+  imagePullSecrets:
+  - name: regcred
   containers:
   - name: mysql
+    imagePullPolicy: IfNotPresent
     image: mysql:5.7
     ports:
     - name: mysql-port
