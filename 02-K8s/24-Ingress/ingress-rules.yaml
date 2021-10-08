@@ -19,3 +19,10 @@ spec:
         backend:
           serviceName: helloworld-v2
           servicePort: 80
+  - host: python
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: python-webapp-svc
+          servicePort: 31007
