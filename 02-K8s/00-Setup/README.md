@@ -14,7 +14,7 @@ git clone https://github.com/amitvashisttech/docker-kubernetes-ericsson-04-Oct-2
 ## Now provision three virtual machines with following commands:
 
 ```
-cd docker-kubernetes-ericsson-04-Oct-2021/02-K8s/
+cd docker-kubernetes-ericsson-04-Oct-2021/02-K8s/00-Setup
 vagrant.exe up
 
 
